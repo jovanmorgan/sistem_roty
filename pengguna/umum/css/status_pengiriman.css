@@ -1,0 +1,138 @@
+/*--------------------------------------------------------------
+# Melacak Lokasi pengiriman
+--------------------------------------------------------------*/
+.resume .resume-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #3b434a;
+  text-align: center;
+}
+
+.resume .resume-item {
+  padding: 0 0 20px 40px;
+  margin-top: -2px;
+  border-left: 2px solid #82909c;
+  position: relative;
+  color: #333;
+}
+
+.resume .resume-item h4 {
+  line-height: 18px;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item.latest-update h4 {
+  color: #ffb727;
+}
+
+.resume .resume-item.latest-update a {
+  color: #ffb727;
+  text-decoration: none;
+}
+
+.resume .resume-item.latest-update a:hover {
+  text-decoration: underline;
+}
+
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #82909c;
+}
+
+.resume .resume-item.latest-update::before {
+  background: #ffb727;
+  border: 2px solid #333;
+}
+
+.resume .resume-item:not(.latest-update)::before {
+  background: #fff;
+  border: 2px solid #82909c;
+}
+
+.resume .resume-item::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  left: -6px;
+  top: 3px;
+  background: #82909c;
+}
+
+.resume .resume-item.latest-update::after {
+  background: #ffb727;
+}
+
+.container {
+  max-width: 900px;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.order-img img {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-details {
+  margin-left: 15px;
+}
+
+.order-details h6 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.total-price {
+  text-align: right;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #28a745;
+}
+
+.card {
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.shadow-lg {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  max-width: 900px;
+}
+
+/* Modal */
+.modal-content {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.modal-body img {
+  width: 100%;
+  height: auto;
+}

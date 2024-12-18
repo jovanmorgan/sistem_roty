@@ -1,0 +1,112 @@
+.profile-header {
+  background: #f9fafb;
+  padding: 30px 0;
+  margin-bottom: 20px;
+}
+
+.profile-header .breadcrumb {
+  background: transparent;
+  margin-bottom: 0;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 20px;
+}
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.profile-stats {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.profile-stats .stat {
+  padding: 20px;
+}
+
+.profile-stats .stat .icon {
+  font-size: 24px;
+}
+
+.order-status {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.order-status .status-item {
+  position: relative;
+}
+
+.order-status .status-item a {
+  text-decoration: none;
+  color: hsl(0, 0%, 0%);
+  transition: 0.1s all;
+}
+
+.order-status .status-item a:hover {
+  color: hsl(30, 100%, 50%);
+}
+
+.order-status .status-item i {
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.order-status .status-item p {
+  font-size: 13px;
+}
+
+.order-status .status-item .badge {
+  position: absolute;
+  top: -7px;
+  right: 2px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  font-size: 10px;
+}
+
+.order-status .status-item .b1 {
+  top: -10px;
+  right: 17px;
+}
+
+.order-status .status-item .b2 {
+  top: -10px;
+  right: 7px;
+}
+
+.order-status .status-item .b3 {
+  top: -10px;
+  right: 1px;
+}
+
+.order-status .status-item .b4 {
+  top: -9px;
+  right: 10px;
+}
+
+.order-status .status-item .b5 {
+  top: -9px;
+  right: 13px;
+}
+
+@media screen and (max-width: 768px) {
+  .order-status .status-item p {
+    font-size: 11px;
+  }
+  .order-status .status-item i {
+    font-size: 27px;
+  }
+}

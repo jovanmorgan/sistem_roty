@@ -1,0 +1,11 @@
+RewriteEngine On
+RewriteBase /fasya_bakery/pengguna/umum/
+
+# Menghapus ekstensi .php dari URL
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([^/]+)/?$ $1.php [L]
+
+# Routing untuk file index.php
+RewriteRule ^$ index.php [L]
+RewriteRule ^home$ index.php [L]

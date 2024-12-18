@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shopping Cart</title>
+
+    <!--=============== BOXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link href="../assets/img/loding_donat.png" rel="icon" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="css/nav_keranjang.css" />
+    <link rel="stylesheet" href="../assets/css/loding.css" />
+
+    <link
+      rel="stylesheet"
+      href="css/keranjang.css"
+      media="screen"
+      title="no title"
+      charset="utf-8"
+    />
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.js"
+      charset="utf-8"
+    ></script>
+    <meta name="robots" content="noindex,follow" />
+  </head>
+  <body translate="no">
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="roti.html" class="nav__logo"
+          ><i
+            class="bx bx-arrow-back"
+            style="font-size: 2.3em; position: relative; left: 15px"
+          ></i>
+        </a>
+        <a href="roti.html" class="nav__logo"
+          ><h1><b>Keranjang Saya</b></h1>
+        </a>
+
+        <div class="nav__menu chackout" id="nav-menu">
+          <ul class="nav__list">
+            <div class="buttons" style="position: relative; bottom: 18px">
+              <input type="checkbox" />
+            </div>
+            <li class="nav__item" style="margin-top: 10px">
+              <h4 class="total">Total : <span>Rp100.000.000.000</span></h4>
+            </li>
+            <li class="nav__item" style="margin-top: 8px">
+              <a href="#" class="btn">Checkout</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__kiri">
+          <a href="#" class="nav__search-icon"> </a>
+          <a href="#" onclick="hapusSemuaProduk()">
+            <i class="bx bx-trash"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <!-- jarak -->
+    <div class="jarak" style="height: 50px"></div>
+    <!-- akhir jarak -->
+
+    <div class="shopping-cart">
+      <!-- Title -->
+      <div class="title">Nama Produk</div>
+
+      <!-- Product #1 -->
+      <div class="item">
+        <div class="buttons">
+          <input type="checkbox" />
+        </div>
+
+        <div class="image">
+          <img src="img/fb/p1.jpg" alt="" width="100px" />
+        </div>
+
+        <div class="description">
+          <span>Common Projects</span>
+          <span>White</span>
+        </div>
+
+        <div class="quantity">
+          <button class="plus-btn" type="button" name="button">
+            <img src="img/card_keranjang/plus.svg" alt="" />
+          </button>
+          <input type="text" name="name" value="1" disabled />
+          <button class="minus-btn" type="button" name="button">
+            <img src="img/card_keranjang/minus.svg" alt="" />
+          </button>
+        </div>
+
+        <div class="total-price">Rp100.000.000</div>
+      </div>
+      <div class="item2">
+        <div class="quantity">
+          <button class="plus-btn" type="button" name="button">
+            <img src="img/card_keranjang/plus.svg" alt="" />
+          </button>
+          <input type="text" name="name" value="1" disabled />
+          <button class="minus-btn" type="button" name="button">
+            <img src="img/card_keranjang/minus.svg" alt="" />
+          </button>
+        </div>
+
+        <div class="total-price">Rp100.000.000</div>
+      </div>
+    </div>
+    <div class="shopping-cart">
+      <!-- Title -->
+      <div class="title">Nama Produk</div>
+
+      <!-- Product #1 -->
+      <div class="item">
+        <div class="buttons">
+          <input type="checkbox" />
+        </div>
+
+        <div class="image">
+          <img src="img/fb/p6.jpg" alt="" width="100px" />
+        </div>
+
+        <div class="description">
+          <span>Common Projects</span>
+          <span>White</span>
+        </div>
+
+        <div class="quantity">
+          <button class="plus-btn" type="button" name="button">
+            <img src="img/card_keranjang/plus.svg" alt="" />
+          </button>
+          <input type="text" name="name" value="1" disabled />
+          <button class="minus-btn" type="button" name="button">
+            <img src="img/card_keranjang/minus.svg" alt="" />
+          </button>
+        </div>
+
+        <div class="total-price">Rp100.000.000</div>
+      </div>
+      <div class="item2">
+        <div class="quantity">
+          <button class="plus-btn" type="button" name="button">
+            <img src="img/card_keranjang/plus.svg" alt="" />
+          </button>
+          <input type="text" name="name" value="1" disabled />
+          <button class="minus-btn" type="button" name="button">
+            <img src="img/card_keranjang/minus.svg" alt="" />
+          </button>
+        </div>
+
+        <div class="total-price">Rp100.000.000</div>
+      </div>
+    </div>
+    <div class="shopping-cart">
+      <!-- Title -->
+      <div class="title">Nama Produk</div>
+
+      <!-- Product #1 -->
+      <div class="item">
+        <div class="buttons">
+          <input type="checkbox" />
+        </div>
+
+        <div class="image">
+          <img src="img/fb/p4.jpg" alt="" width="100px" />
+        </div>
+
+        <div class="description">
+          <span>Common Projects</span>
+          <span>White</span>
+        </div>
+
+        <div class="quantity">
+          <button class="plus-btn" type="button" name="button">
+            <img src="img/card_keranjang/plus.svg" alt="" />
+          </button>
+          <input type="text" name="name" value="1" disabled />
+          <button class="minus-btn" type="button" name="button">
+            <img src="img/card_keranjang/minus.svg" alt="" />
+          </button>
+        </div>
+
+        <div class="total-price">Rp100.000.000</div>
+      </div>
+      <div class="item2">
+        <div class="quantity">
+          <button class="plus-btn" type="button" name="button">
+            <img src="img/card_keranjang/plus.svg" alt="" />
+          </button>
+          <input type="text" name="name" value="1" disabled />
+          <button class="minus-btn" type="button" name="button">
+            <img src="img/card_keranjang/minus.svg" alt="" />
+          </button>
+        </div>
+
+        <div class="total-price">Rp100.000.000</div>
+      </div>
+    </div>
+
+    <div class="shopping-cart2">
+      <!-- Product #1 -->
+      <div class="item">
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <div class="buttons" style="position: relative; bottom: 25px">
+              <input type="checkbox" />
+            </div>
+            <li class="nav__item">
+              <h4 class="total" style="position: relative; top: -2px">
+                Total : <span>Rp100.000.000.000</span>
+              </h4>
+            </li>
+            <li
+              class="nav__item"
+              style="position: relative; left: 200px; top: 5px"
+            >
+              <a href="#" class="btn" style="margin: 0px">Checkout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- jarak -->
+    <div class="jarak" style="height: 80px"></div>
+    <!-- akhir jarak -->
+    <script src="script.js"></script>
+
+    <script type="text/javascript">
+      $(".minus-btn").on("click", function (e) {
+        e.preventDefault();
+        var $this = $(this);
+        var $input = $this.closest(".quantity").find("input");
+        var value = parseInt($input.val());
+
+        if (value > 1) {
+          value = value - 1;
+        } else {
+          value = 0;
+        }
+
+        $input.val(value);
+      });
+
+      $(".plus-btn").on("click", function (e) {
+        e.preventDefault();
+        var $this = $(this);
+        var $input = $this.closest(".quantity").find("input");
+        var value = parseInt($input.val());
+
+        if (value < 100) {
+          value = value + 1;
+        } else {
+          value = 100;
+        }
+
+        $input.val(value);
+      });
+
+      $(".like-btn").on("click", function () {
+        $(this).toggleClass("is-active");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+.status-item a:hover .fa-money-bill-wave,
+.status-item a:hover p.belum_bayar {
+  color: rgb(255, 145, 19) !important; /* warna text-warning */
+}
+
+.status-item a:hover .fa-box,
+.status-item a:hover p.dikemas {
+  color: #17a2b8 !important; /* warna text-info */
+}
+
+.status-item a:hover .fa-truck,
+.status-item a:hover p.dikirim {
+  color: #007bff !important; /* warna text-primary */
+}
+
+.status-item a:hover .fa-check-circle,
+.status-item a:hover p.diterima {
+  color: #28a745 !important; /* warna text-success */
+}
+
+.status-item a:hover .fa-times-circle,
+.status-item a:hover p.dibatalkan {
+  color: #dc3545 !important; /* warna text-danger */
+}
+
+/* Tambahkan style untuk halaman yang aktif */
+.belum-bayar,
+.dikemas,
+.dikirim,
+.diterima,
+.dibatalkan {
+  color: #6c757d !important; /* warna text-secondary */
+}

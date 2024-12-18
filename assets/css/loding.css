@@ -1,0 +1,116 @@
+.loading {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 102;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Menjaga div dari overflow */
+  animation: munculkanWarna 0.1s forwards;
+}
+
+.loading-top,
+.loading-bottom {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  z-index: 10;
+}
+
+.loading-top {
+  background-color: #ff6f00; /* Oranye hangat */
+  top: -50%; /* Mulai di luar layar */
+  animation: slideDown 1s forwards; /* Animasi turun */
+}
+
+.loading-bottom {
+  background-color: #ff6f00; /* Oranye hangat */
+  bottom: -50%; /* Mulai di luar layar */
+  animation: slideUp 1s forwards; /* Animasi naik */
+}
+
+.loading-img {
+  position: relative;
+  z-index: 101;
+  animation: spinAndScaleUp 1s forwards;
+}
+
+.loading-putar {
+  animation: spin 1s linear infinite;
+  z-index: 10;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinAndScaleUp {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes spinAndScaleDown {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.5);
+  }
+}
+
+@keyframes munculkanWarna {
+  to {
+    background-color: #fffefb;
+  }
+}
+
+@keyframes hilangkanWarna {
+  from {
+    background-color: #ffffff;
+  }
+  to {
+    background-color: #ffffff00;
+  }
+}
+
+@keyframes slideDown {
+  to {
+    top: 0; /* Akhir di posisi 0 */
+  }
+}
+
+@keyframes slideUp {
+  to {
+    bottom: 0; /* Akhir di posisi 0 */
+  }
+}
+
+@keyframes slideDownBack {
+  from {
+    top: 0;
+  }
+  to {
+    top: -50%; /* Kembali ke luar layar */
+  }
+}
+
+@keyframes slideUpBack {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: -50%; /* Kembali ke luar layar */
+  }
+}

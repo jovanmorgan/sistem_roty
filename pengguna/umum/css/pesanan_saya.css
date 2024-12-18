@@ -1,0 +1,115 @@
+.order-item {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+}
+
+.order-img img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+
+.order-details {
+  flex: 1;
+}
+
+.order-details h6 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.order-details p {
+  margin: 5px 0;
+}
+
+.order-actions {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.warna_orange {
+  color: hsl(30, 100%, 50%);
+}
+
+.pm .s {
+  color: rgb(252, 148, 30);
+  transition: 0.3s;
+}
+
+.pm:hover .s {
+  color: rgb(255, 145, 19);
+}
+
+.btn.pay-now {
+  background-color: hsl(30, 100%, 50%);
+  color: white;
+  margin-bottom: 10px;
+  width: 50%;
+}
+
+.btn.dikemas-now {
+  background-color: #17a2b8;
+  color: white;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.btn.dikirim-now {
+  background-color: #007bff;
+  color: white;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.btn.diterima-now {
+  background-color: #28a745;
+  color: white;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.btn.batal-now {
+  background-color: hsl(30, 100%, 50%);
+  color: white;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.total-harga {
+  font-weight: bold;
+  color: hsl(30, 100%, 50%);
+}
+
+.timer {
+  font-size: 14px;
+  color: #ff0000;
+  text-align: right;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .order-item {
+    flex-wrap: nowrap;
+  }
+
+  .order-actions {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .btn.pay-now,
+  .timer {
+    width: auto;
+  }
+
+  .btn.pay-now {
+    margin-bottom: 0;
+  }
+}
